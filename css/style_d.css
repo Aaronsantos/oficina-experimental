@@ -8,6 +8,10 @@ html {
 
 }
 
+body{
+  background-color:#BAC2CE;
+}
+
 /*----------HEADER--------------*/
 
 .main_menu>h1{
@@ -15,7 +19,11 @@ html {
   float: left;
   margin-top: 10px;
   margin-left: 10px;
+}
 
+.main_menu> h1 img{
+  display: inline-block;
+  width: 40vw;
 }
 
 /*----MENU-----*/
@@ -28,6 +36,7 @@ html {
   top: 0;
   left: 0;
   display: block;
+  background-color: #45719E;
 }
 
 .main_menu>ul{
@@ -59,78 +68,103 @@ html {
 
 .hero{
   margin-top: 2.5em;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
-  background-color: red;
-  display: inline-block;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 
 /*-------------AREA PRINCIPAL-------------*/
 
 .container{
-  width: 95%;
-  margin: 2% 2%;
+  width: 80%;
+  margin: 10px 10%;
 }
 
 /*--------------PAGINA INCIAL------------*/
 
-.coluna2{
-  display: inline-block;
-  width: 69%;
-  margin-top: 0;
-  padding-top: 0;
-  float: right;
-}
 
 /*----Seção Projetos:---*/
 
 .projeto{
+  /*border: 3px solid #E4A87A;
+  border-bottom: 7px solid #E4A87A;*/
   box-sizing: border-box;
-  background-color: grey;
+  /*background-color: #F2C7A7;*/
   margin-top: 10px;
   padding: 5px;
-  width: 30%;
-  display: inline-block;
+  width: 1040px;
+}
 
+.projeto>h2{
+  text-align: center;
+  border-bottom: 2px solid;
 }
 
 .projeto>article{
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 10px 0;
-  border-bottom: 1px solid black;
+  background-color:  #F2C7A7;
+  margin: 20px 10px;
+  border-bottom: 5px solid #E4A87A;
+  width: 320px;
+  display: inline-block;
+  height: 270px;
+
+
 }
 
 .projeto>article>header {
-  height: 9em;
+  height: 10em;
   width: 100%;
   background-color: pink;
+
 }
 
-.projeto>article>header> h2{
-  position: relative;
-  display: inline-block;
-  top: 80%;
-  text-align: right;
-
+.projeto>article>.post1{
+  background-image:  url(../img/post1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .info{
-  text-align: center;
+  text-align: left;
+  padding: 5px;
 }
 
 .projeto>article>.info> .categ,
 .projeto>article>.info> .nivel,
-.projeto>article>.info> .views,
-.projeto>article>.info>.forum{
+.projeto>article>.info> .views{
+  font-size: 0.7em;
+  border-radius: 8px;
   display: inline-block;
-  width: 45%;
+  height: 2em;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+  background-color:#6A80B2;
+  margin: 3px 1px 3px 1px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.projeto>article>.go{
+  display: inline-block;
+  width: 98%;
   height: 2em;
   box-sizing: border-box;
   padding: 5px 0;
   text-align: center;
-  background-color: green;
+  background-color: #F44738;
   margin: 3px 1px 3px 1px;
+  border-radius: 6px;
+  border-right: 3px #E02634 solid;
+  border-bottom: 3px #E02634 solid;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*------ seção: Artigos----*/
@@ -144,7 +178,7 @@ html {
 }
 
 .artigo>article{
-  background-color: rgba(0, 0, 0, 0.2);
+
   margin: 5px 0;
   border-bottom: 1px solid black;
 }
@@ -191,7 +225,7 @@ html {
   border-radius: 50%;
   background-color: orange;
   text-align: center;
-  padding: 3.5em 0;
+  padding: 2em 0;
   box-sizing: border-box;
   margin: 0.5em;
 }
